@@ -1,0 +1,118 @@
+.doctors{
+    margin: 0 auto;
+    /* max-width: 1160px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.doctors .doctor-card{
+    display: none;
+    margin: 0 5px 20px 5px;
+    display: flex;
+    flex-direction: row;
+    min-height: 200px;
+    width: 350px;
+    background: var(--cards);
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0 var(--boxShadow);
+    transition: all .3s ease;
+    border-radius: 8px; 
+}
+
+.doctors .doctor-card .left, .doctors .doctor-card .right{
+    padding: 15px;
+}
+
+.doctors .doctor-card .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.doctors .doctor-card .left img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.doctors .doctor-card .view-profile{
+    padding: 5px;
+    width: -webkit-fill-available;
+    background: var(--sec-hover);
+    color: var(--groww-green);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.doctors .doctor-card .right{
+    width: -webkit-fill-available;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: var(--sec-text);
+}
+
+.doctors .doctor-card .right .name{
+    padding-bottom: 5px;
+}
+
+.doctors .doctor-card .right .name h3{
+    color: var(--pri-text);
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.doctors .doctor-card .right .name p{
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--red-alt);
+}
+
+.doctors .doctor-card .right .rating{
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.doctors .doctor-card .right .rating .rate{
+    margin-right: 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+.doctors .doctor-card .right .rating .fa-star::before{
+    font-size: 14px;
+    color: var(--yellow);
+}
+
+.doctors .doctor-card .right .speciality{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    max-height: 89px;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+.doctors .doctor-card .right .speciality p{
+    margin: 5px;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 2px 15px;
+    font-size: 12px;
+    width: fit-content;
+    color: var(--groww-blue);
+    border: 1px solid var(--groww-blue);
+    border-radius: 20px;
+}
+
+.doctors .doctor-card .right .view-profile{
+    display: none;
+}

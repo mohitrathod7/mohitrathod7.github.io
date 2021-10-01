@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+:root{
+    --loading-animation: loading 1s infinite linear;
+    --yellow: #EFCA4D;
+    --green: #03DAC6;
+    --pink: #BB86FC;
+    --red-alt: #ff4f68;
+    --green-alt: #6ce890;
+    --orange-alt: #f8b068;
+    --yellow-alt: #f5eea2;
+    --blue-alt: #7561ff;
+    --pink-alt: #ff3654;
+    --groww-red: #d55438;
+    --groww-green: #0abb92;
+    --groww-blue: #98a4ff;
+}
+
+html[data-theme=light]{
+    --loader: linear-gradient(90deg, #f4f4f4, rgba(229, 229, 229, 0.7) 90px, #f4f4f4 150px);
+    --pri-bg: #fafafa;
+    --sec-bg: #e0e0e0;
+    --sidepanel-bg: #bdbdbd;
+    --cards: #e0e0e0; 
+    --sec-hover: #fafafa;
+    --pri-text: #212121;
+    --sec-text: #424242;
+    --boxShadow: 0 0 16px rgb(0 0 0 / 28%)
+}
+
+html[data-theme=dark]{
+    --loader: linear-gradient(90deg, var(--sec-hover), rgba(44, 44, 44, 0.7) 25px, var(--sec-hover) 75px);
+    --pri-bg: #181818;
+    --sec-bg: #212121;
+    --sidepanel-bg: #252525;
+    --cards: #1d1d1d;
+    --pri-hover: #3a3b3c;
+    --sec-hover: #2c2c2c;
+    --pri-text: #DCDCDC;
+    --sec-text: #b3b3b3;
+    --icons: #909090;
+    --error: #CF6679;
+    --border: #2a2a2a;
+    --boxShadow: rgba(20,20,20,0.6);
+}
+
+body{
+    background: var(--pri-bg);
+}
+
+.content{
+    margin: auto;
+    padding: 0 15px;
+    max-width: 1160px;
+}
+
+.loading{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 1160px;
+    height: 100%;
+    transition: 1s all ease-in;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.loading-animation{
+    padding: 0 !important;
+    background: var(--loader);
+    animation: var(--loading-animation) !important;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+i{
+    height: fit-content;
+}
+
+i::before{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+input, button{
+    outline: none;
+    border: 0;
+}
+
+.sticky-div{
+    padding-bottom: 20px;
+    position: sticky;
+    top: -1px;
+    background: var(--pri-bg);
+}
+
+img{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* For Background blur effect  */
+.overlay{
+    display: none;
+    height: 85vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    transition: 1s all ease-in-out;
+    backdrop-filter: blur(2px);
+}
+
+.fa-facebook::before{
+    color: #3b5998;
+}
+
+.fa-instagram::before{
+    color: #C13584;
+}
+
+.fa-linkedin::before{
+    color: #007bb6;
+}
+
+.fa-twitter::before{
+    color: #00aced;
+}
+
+@keyframes loading{
+    0%{
+        background-position: 00px;
+    }
+    100%{
+        background-position: 200px;
+    }
+}

@@ -1,0 +1,146 @@
+
+:root{
+    --red: hsl(355, 73%, 46%);
+    --blue: hsl(271, 75%, 53%);
+    --black: #2d2d2d;
+    --white: #f4f4f2;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: var(--pri-bg);
+    transition: 0.5s all ease-in-out;
+}
+
+.container{
+    margin: auto;
+    position: relative;
+    display: flex;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 10px;
+}
+
+.container .boxes{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background: hsl(271, 75%, 58%);
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+.container .boxes:nth-child(1){
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.container .boxes:nth-child(2){
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.container .boxes h1{
+    margin-bottom: 15px;
+    -webkit-text-stroke: 1.5px var(--black);
+}
+
+.container .boxes a{
+    padding: 3px 10px;
+    width: fit-content;
+    background: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 800;
+    border: 2px solid var(--white);
+}
+
+.container .boxes a:hover{
+    border-color: var(--black);
+}
+
+.container form{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -10vh;
+    height: 80vh;
+    width: 50%;
+    background: var(--white);
+    transition: 1s all ease-in;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container form section{
+    position: absolute;
+    margin: 15vh 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: -webkit-fill-available;
+    min-width: -webkit-fill-available;
+    background: var(--white);
+    transition: 1s all ease-in;
+    transition-delay: 0.5s;
+}
+
+.container form section:nth-child(1){
+    left: 0;
+}
+
+.container form section:nth-child(2){
+    left: 30vw; 
+} 
+
+.container form section input, .container form section button{
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 35px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    outline: none;
+}
+
+.container form section button{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.toLeft{
+    animation: toLeft 1s forwards;
+}
+
+.toRight{
+    animation: toRight 1s forwards;
+}
+
+@keyframes toLeft{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 30vw;
+    }
+}
+
+@keyframes toRight{
+    0%{
+        right: 30vw;
+    }
+    100%{
+        right: 0;
+    }
+}
