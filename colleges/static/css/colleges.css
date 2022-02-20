@@ -1,0 +1,46 @@
+nav{
+    height: 50px;
+    background: cornflowerblue;
+    text-align: center;
+    line-height: 50px;
+    align-items: center;
+}
+
+.programs{
+    padding: 10px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.programs .program{
+    position: relative;
+    margin: 5px 0;
+    padding: 10px;
+    max-width: 500px;
+    background: var(--program-bg);
+    border-radius: 10px;
+}
+
+.programs .program .college-image{
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+.programs .program .program-title{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.programs .program .college-name{
+    font-size: large;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px){
+    .programs .program{
+        max-width: -webkit-fill-available;
+    }
+}
