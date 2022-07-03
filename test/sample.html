@@ -1,0 +1,86 @@
+<html>
+<head>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href="https://sapphire-ui.netlify.app/css/components.css">   
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .card{
+            margin: 89px auto;
+            background: var(--primary-bg);
+        }
+
+        .card-badge{
+            border: 1px solid #48304d;
+            background: var(--secondary-bg);
+            color: #48304d;
+        }
+
+        .card-header{
+            color: var(--primary-cl);
+        }
+
+        .card-title{
+            color: var(--secondary-cl);
+        }
+
+        .card-buttons{
+            background: var(--layer-bg);
+        }
+
+        .card-icon, .card-button{
+            color: unset;
+        }
+        
+        .card-chips{
+            display: flex;
+            padding: 5px 20px;
+            align-items: center;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+
+        .card-chip{
+            border: 1px solid #48304d;
+            background: var(--secondary-bg);
+            color: #48304d;
+            font-size: 1.2rem;
+            width: max-content;
+            margin: 0 5px 5px 0;
+            padding: 0.4rem 0.8rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card space-S">
+        <span class="card-badge">25% OFF</span>
+        <div class="card-img">
+            <img src="card-img-1.jpeg" alt="blue-watch"/>
+        </div>
+        <div class="card-header">Blue Watch</div>
+        <div class="card-title">by Rolex</div>
+        <p class="card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio
+        </p>
+
+        <div class="card-chips">
+            <span class="card-chip">10% OFF</span>
+            <span class="card-chip">15% OFF</span>
+            <span class="card-chip">20% OFF</span>
+            <span class="card-chip">25% OFF</span>
+            <span class="card-chip">30% OFF</span>
+        </div>        
+
+        <div class="card-buttons">
+            <i class="card-icon material-icons material-symbols-filled" style="color: var(--layer-cl-1)">home</i>
+            <i class="card-icon material-icons material-symbols-outlined" style="color: var(--layer-cl-1)">favorite</i>
+            <i class="card-icon material-icons material-symbols-outlined" style="color: var(--layer-cl-1)">chat_bubble</i>
+            <i class="card-icon material-icons material-symbols-outlined" style="color: var(--layer-cl-1)">person</i>
+        </div>
+    </div>
+</body>
+</html>
