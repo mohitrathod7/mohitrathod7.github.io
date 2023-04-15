@@ -198,9 +198,13 @@ li{
     align-items: center;
 }
 
+.container .main .navbar .navbar__icons i{
+    font-size: var(--fs-1);
+}
+
 .container .main .navbar .navbar__icons a{
     padding: 0.5rem 1rem;
-    font-size: var(--fs-small);
+    font-size: var(--fs-5);
 }
 
 .container .main .navbar .navbar__icons a:nth-of-type(2){
@@ -278,7 +282,7 @@ li{
 }
 
 /* IPAD Air */
-@media (min-width: 900px) and (max-width: 600px) and (orientation: portrait) {
+@media (min-width: 900px) and (max-width: 600px) and (orientation: portrait){
     .containers{
         grid-template-columns: repeat(1, 1fr);
     }
