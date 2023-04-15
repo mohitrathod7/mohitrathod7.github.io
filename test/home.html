@@ -81,7 +81,7 @@
     <div class="loader">
         <img src="#">
     </div>
-
+    
     <div class="container">
         <section class="main">
             <div class="navbar">
@@ -89,8 +89,8 @@
                     <h1 class="heading">Sales</h1>
 
                     <div class="navbar__icons">
-                        <a class="signup" href="#">Signup</a>
-                        <a class="login" href="#">Login</a>
+                        <i class="icon material-icons material-icons-outlined">notifications</i>
+                        <i class="icon material-icons material-icons-outlined">account_circle</i>
                     </div>
                 </div>
 
@@ -125,27 +125,19 @@
                         <p class="label">Settings</p>
                     </a>
                 </div>
-
-                <div class="tabs">
-                    <a href="#" class="title active"><p>Daily sales</p></a>
-                    <a href="#" class="title"><p>Appointments</p></a>
-                    <a href="#" class="title"><p>Invoices</p></a>
-                    <a href="#" class="title"><p>Vouchers</p></a>
-                    <a href="#" class="title"><p>Paid plans</p></a>
-                </div>
             </div>
           
-            <div class="content">                           
+            <div class="content">     
                 <div class="containers">
                     <div class="container">
                         <div>
                             <h1 class="container__heading">Recent sales</h1>
                             <h1 class="container__sub-heading">Last 7 days</h1>
                         </div>
-
+                
                         <section>
                             <div class="container__amount">₹ 0</div>
-
+                
                             <div class="container__sub-heading">Appointments <span style="color: black; font-weight: bold;">3</span></div>
                             <div class="container__sub-heading">Appointments value <span style="color: black; font-weight: bold;">₹107.00</span></div>
                         </section>
@@ -160,10 +152,27 @@
                             <div>
                                 <i class="icon material-icons material-icons-outlined">today</i>
                             </div>
-
+                
                             <p class="container__heading" style="font-size: 3rem; line-height: 5rem;">No Appointments Today</p>
                             <br>
                             <p>Visit the <a href="{{ url_for('calendar.home') }}" class="link">calendar</a> section to add some appointments</p>
+                        </section>
+                    </div>
+                
+                    <div class="container">
+                        <div>
+                            <h1 class="container__heading">Upcoming appointments</h1>
+                            <h1 class="container__sub-heading">Next 7 days</h1>
+                        </div>
+                
+                        <section>
+                            <div>
+                                <i class="icon material-icons material-icons-outlined">timeline</i>
+                            </div>
+                
+                            <p class="container__heading" style="font-size: 3rem; line-height: 5rem;">Your schedule is empty</p>
+                            <br>
+                            <p>Make some appointments for schedule data to appear</p>
                         </section>
                     </div>
                 </div>
