@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+    <title>App - Sales</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="hsl(217, 16%, 15%)">
+    
+    <link rel="stylesheet" href="../../static/css/layout.css">
+    <script type="text/javascript" src="../../static/js/app.js" defer></script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- Google Fonts  & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     
+    <link rel="preload" as="style" onload="this.rel= 'stylesheet'" href='https://fonts.googleapis.com/icon?family=Material+Icons+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap'>
+    <link rel="preload" as="style" onload="this.rel= 'stylesheet'" href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'>
+     
+    <noscript>
+        <link rel="stylesheet" href='https://fonts.googleapis.com/icon?family=Material+Icons+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    </noscript> 
+</head>
+
+<body class="prevent-select">
+    <div class="loader">
+        <img src="#">
+    </div>
+    
+    <div class="navbar">
+        <div class="navbar__header">
+            <h1 class="header__text">Home</h1>
+
+            <div class="header__icons">
+                <i class="icon material-icons material-icons-outlined">notifications</i>
+                <i class="icon material-icons material-icons-outlined">account_circle</i>
+            </div>
+        </div>
+  
+        <div class="navbar__links">
+            <a href="../../home/home.html">
+                <i class="icon material-icons material-icons-outlined opened">home</i>
+                <p class="label">Home</p>
+            </a>
+
+            <a href="../../calendar/calendar.html">
+                <i class="icon material-icons material-icons-outlined opened">calendar_today</i>
+                <p class="label">Calendar</p>
+            </a>
+
+            <a href="../../sales/sales.html">
+                <i class="icon material-icons material-icons-outlined opened">sell</i>
+                <p class="label">Sales</p>
+            </a>
+            
+            <a href="../../catalogue/memberships.html">
+                <i class="icon material-icons material-icons-outlined opened">import_contacts</i>
+                <p class="label">Catalogue</p>
+            </a>
+            
+            <a href="../../analytics/dashboard.html">
+                <i class="icon material-icons material-icons-outlined opened">insights</i>
+                <p class="label">Analytics</p>
+            </a>
+            
+            <a href="../../settings/account.html">
+                <i class="icon material-icons material-icons-outlined opened">settings</i>
+                <p class="label">Settings</p>
+            </a>
+        </div>
+            
+        <div class="navbar__tabs">
+            <a href="../analytics/dashboard.html" class="title"><p>Dashboard</p></a>
+            <a href="../analytics/reports/reports.html" class="title active"><p>Reports</p></a>
+        </div>
+    </div>
+    
+    <div class="content">                           
+        <div class="containers">
+            <div class="container" data-type="links">
+                <section>
+                    <h1 class="container__heading">Finances</h1>
+                    <h1 class="container__sub_heading">Monitor your overall finances including sales, refunds, taxes, payments and more</h1>
+                </section>
+        
+                <section>
+                    <ul>
+                        <li class="container__link link" onclick="window.location.href='finances_summary/'">Finances summary<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='payments_summary/'">Payments summary<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='payment_transactions/'">Payment transactions<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                    </ul>
+                </section>
+            </div>
+        
+            <div class="container" data-type="links">
+                <section>    
+                    <h1 class="container__heading">Appointments</h1>
+                    <h1 class="container__sub_heading">View projected revenues of upcoming appointments, track cancellation rate and reasons</h1>
+                </section>
+        
+                <section>
+                    <ul>
+                        <li class="container__link link" onclick="window.location.href='appointments_summary/'">Appointments list<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='appointments_summary/'">Appointments summary<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='appointments_cancellations/'">Appointments cancellations<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                    </ul>
+                </section>
+            </div>
+        
+            <div class="container" data-type="links">
+                <section>
+                    <h1 class="container__heading">Vouchers</h1>
+                    <h1 class="container__sub_heading">Track your total outstanding liability as well as voucher sales and redemption activity</h1>
+                </section>
+        
+                <section>
+                    <ul>
+                        <li class="container__link link" onclick="window.location.href='vouchers_outstanding_balance/'">Vouchers outstanding balance<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='voucher_sales/'">Voucher sales<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='voucher_redemptions/'">Voucher redemptions<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                    </ul>
+                </section>
+            </div>
+            
+            <div class="container" data-type="links">
+                <section>
+                    <h1 class="container__heading">Clients</h1>
+                    <h1 class="container__sub_heading">Gain insights into how clients interact with your business and who your top spenders are</h1>
+                </section>
+        
+                <section>
+                    <ul>
+                        <li class="container__link link" onclick="window.location.href='client_list/'">Client list<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='client_retention/'">Client retention<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                    </ul>
+                </section>
+            </div>
+        
+            <div class="container" data-type="links">
+                <section>
+                    <h1 class="container__heading">Team</h1>
+                    <h1 class="container__sub_heading">View your team's performance, hours worked as well as commission and tip earnings</h1>
+                </section>
+        
+                <section>
+                    <ul>
+                        <li class="container__link link" onclick="window.location.href='team_members_working_hours/'">Team members working hours<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='team_members_time_off/'">Team members time off<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='tips_by_team_member/'">Tips by team member<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='team_members_commission_summary/'">Team members commission summary<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='team_members_commission_detailed/'">Team members commission detailed<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                    </ul>
+                </section>
+            </div>
+            
+            <div class="container" data-type="links">
+                <section>
+                    <h1 class="container__heading">Sales</h1>
+                    <h1 class="container__sub_heading">Analyse the performance of your business by comparing sales across products, team members, channels and more</h1>
+                </section>
+        
+                <section>
+                    <ul>
+                        <li class="container__link link" onclick="window.location.href='sales_by_/'">Sales by item<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_/'">Sales by type<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_item/'">Sales by item<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_type/'">Sales by type<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_service/'">Sales by service<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_product/'">Sales by product<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_location/'">Sales by location<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_channel/'">Sales by channel<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_client/'">Sales by client<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_team_member/'">Sales by team member<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_day/'">Sales by day<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_month/'">Sales by month<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_quarter/'">Sales by quarter<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                        <li class="container__link link" onclick="window.location.href='sales_by_year/'">Sales by year<span class="icon material-icons material-icons-outlined">navigate_next</span></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
