@@ -393,12 +393,20 @@ li{
 
     .containers .container{
         margin-top: 0;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
         width: -webkit-fill-available !important;
         border-radius: 0;
     }
 
-    .containers .container .container__heading{
+    .containers .container section{
+        padding: 3rem 2rem;
+    }
+
+    .containers .container[data-type="links"] .container__heading{
+        text-align: center;
+    }
+
+    .containers .container[data-type="links"] .container__sub_heading{
         text-align: center;
     }
 }
