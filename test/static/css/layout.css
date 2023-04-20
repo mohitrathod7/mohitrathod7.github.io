@@ -334,6 +334,10 @@ li{
     box-shadow: var(--boxshadow-top), var(--boxshadow-bottom);
 }
 
+.containers .container .container__link:first-child{
+    box-shadow: var(--boxshadow-top);
+}
+
 .containers .container .container__link:last-child{
     box-shadow: unset;
 }
