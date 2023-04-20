@@ -379,7 +379,7 @@ li{
 /* Mobile */
 @media (max-width: 800px) and (orientation: portrait){
     .containers{
-        background: #F2F2F2;
+        background: #FCFCFC;
         grid-template-columns: repeat(1, 1fr);
     }
 
