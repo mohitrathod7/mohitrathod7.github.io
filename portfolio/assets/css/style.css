@@ -155,7 +155,6 @@
 .skills__container .skills .skills__sub__title{
 	color: var(--sub-title);
 	font-weight: 600;
-	font-size: 1.75rem;
 	margin-bottom: 2rem;
 }
 
@@ -180,7 +179,7 @@
 }
 
 .skills__container .skills .skills__wrapper li{
-	margin: 0 0 2.8rem 1.5rem;
+	margin: 0 0 2.5rem 1.5rem;
 }
 
 .skills__container .skills .skills__wrapper li:last-child{
@@ -224,7 +223,6 @@ article .icon{
 .certification__title{
 	color: var(--sub-title);
 	font-weight: 600;
-	font-size: 1.75rem;
 	margin-top: 2rem;
 	text-decoration: underline;
 	cursor: pointer;
@@ -249,7 +247,6 @@ article .icon{
 .experience__title{
 	color: var(--sub-title);
 	font-weight: 600;
-	font-size: 1.75rem;
 	margin-top: 2rem;
 }
 
@@ -271,6 +268,7 @@ article .icon{
 	gap: 2rem;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
+	flex-wrap: wrap;
 }
 
 #projects .projects__container .project{
@@ -283,6 +281,7 @@ article .icon{
 	border-radius: 2rem;
 	text-align: center;
 	justify-content: space-between;
+	max-width: 332px;
 }
 
 #projects .projects__container .project .project__title{
