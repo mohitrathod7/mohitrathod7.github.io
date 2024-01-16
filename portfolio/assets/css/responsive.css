@@ -53,11 +53,6 @@
 }
 
 @media screen and (max-width: 600px) {
-	#profile {
-		height: 83vh;
-		margin-bottom: 0;
-	}
-
 	footer nav {
 		height: fit-content;
 		margin-bottom: 2rem;
@@ -106,7 +101,22 @@
 	.text-container {
 		text-align: justify;
 	}
+
 	/* ----------------- */
+	section{
+		margin-bottom: 3rem;
+	}
+
+	nav#hamburger-nav{
+		display: flex;
+		height: unset;
+		margin: 2rem;
+		justify-content: space-between;
+	}	
+	
+	#profile{
+		height: unset;
+	}
 
 	#projects .projects__container, #skills .skills__container{
 		flex-direction: column;
@@ -141,9 +151,9 @@
 	}
 
 	#profile .profile__pic{
+		margin: 2rem;
 		height: unset;
 		width: unset;
-		margin-bottom: 3rem;
 	}
 	
 	#profile .profile__pic img{
@@ -151,4 +161,16 @@
 		height: 100%;
 	}
 
+	#profile .section__title{
+		margin-bottom: 2rem;
+	}
+	
+	#profile #section__social__buttons{
+		margin-top: 2rem;
+	}
+
+	#projects .projects__container .project .project__thumbnail{
+		height: unset;
+		width: unset;
+	}
 }
