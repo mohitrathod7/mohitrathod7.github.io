@@ -2,18 +2,17 @@
 .header{
 	position: fixed;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 	width: 100%;
 }
 
 .progress-container{
 	width: 100%;
 	height: 8px;
-	background: var(--link_hover);
 }
 
 .progress-bar{
-	height: 8px;
+	height: 0.5rem;
 	background: var(--safron);
 	width: 0%;
 }
@@ -61,6 +60,11 @@ a:hover{
 /* HAMBURGER MENU */
 #hamburger-nav{
     display: none;
+	position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    background: var(--white);
+    z-index: 1;
 }
 
 .hamburger-menu{
@@ -86,19 +90,18 @@ a:hover{
 
 .menu-links{
 	position: absolute;
-	top: 100%;
-	right: 0;
+	top: 3.37rem;
+    right: -9.07rem;
 	background-color: var(--white);
 	width: fit-content;
 	max-height: 0;
 	overflow: hidden;
-	transition: all 0.3 ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .menu-links a{
 	display: block;
-	padding: 10px;
-	text-align: center;
+	padding: 1.25rem;
 	font-size: 1.5rem;
 	color: var(--black);
 	text-decoration: none;
@@ -110,7 +113,7 @@ a:hover{
 }
 
 .menu-links.open{
-    max-height: 300px;
+    max-height: 28.8rem;
 }
 
 .hamburger-icon.open span:first-child{
