@@ -1,0 +1,101 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root{
+	--safron: #FF9933;
+	--black: rgb(0, 0, 0);
+	--white: rgb(255, 255, 255);
+	--grey: rgb(128, 128, 128);
+	--text: rgb(85, 85, 85);
+	--sub-title: rgb(85, 85, 85);
+	--border: rgb(163, 163, 163);
+	--button_hover:rgb(53, 53, 53);
+	--link_hover: rgb(181, 181, 181);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: all 300ms ease;
+}
+
+html::-webkit-scrollbar{
+	display: none;
+}
+
+p{
+    color: var(--text);
+}
+
+a{
+    transition: all 300ms ease;
+}
+
+section{
+	padding-top: 4vh;
+	margin: 0 10rem;
+	box-sizing: border-box;
+	min-height: fit-content;
+}
+
+
+/* ICONS */
+.icon{
+	cursor: pointer;
+	font-size: 2rem;
+	height: 2rem;
+}
+
+.icon#tableau{
+	height: 1.95rem !important;
+}
+
+.icon.fa-linkedin{
+	font-size: 2.1rem;
+}
+
+
+/* BUTTONS */
+.section__buttons{
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.btn{
+	font-weight: 600;
+	transition: all 300ms ease;
+	padding: 1rem;
+	width: 9rem;
+	border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2{
+    border: var(--button_hover) 0.1rem solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-color-1, .btn-color-2:hover{
+	background: var(--button_hover);
+	color: var(--white);
+}
+
+.btn-color-1:hover{
+    background: var(--black);
+}
+
+.btn-color-2{
+    background: none;
+}
+
+.btn-color-2:hover{
+    border: var(--button_hover) 0.1rem solid;
+}

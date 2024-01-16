@@ -1,0 +1,376 @@
+/* PROFILE SECTION */
+#profile{
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	height: 80vh;
+	padding-top: 0 !important;
+}
+
+#profile .btn{
+	width: 12rem;
+}
+
+.profile__pic{
+	display: flex;
+	height: 400px;
+	width: 400px;
+	margin: auto 0;
+}
+
+.profile__pic img{
+	border-radius: 50%;
+}
+
+
+.section__sub__title{
+	align-self: center;
+	text-align: center;
+}
+
+.section__sub__title p{
+    font-weight: 600;
+}
+
+.section__sub__title{
+    text-align: center;
+}
+
+.section__title{
+	font-size: 1.75rem;
+	margin-bottom: 3rem;
+}
+
+.section__heading{
+	font-size: 3rem;
+	text-align: center;
+}
+
+#section__social__buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	gap: 1.5rem;
+}
+
+
+/* ABOUT SECTION */
+#about{
+    position: relative;
+}
+
+.about-details-container{
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+#about .about__container{
+	display: flex;	
+	align-items: center;
+}
+
+#about .education div:last-child{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#about .education div:last-child p{
+	font-weight: 600;
+}
+
+#about .education div:last-child p span:last-child{
+	color: var(--grey);
+	font-weight: 400;
+}
+
+#about .text-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2rem 0; 
+	padding: 2rem; 
+	width: 70%;
+}
+
+#about .education{
+	display: flex; 
+	flex-direction: column; 
+	align-items:center; 
+	text-align: center;
+	width: 30%;
+	padding: 1.5rem;
+	background: var(--white);
+	border-radius: 2rem;
+	border: var(--button_hover) 0.1rem solid;
+	border-color: var(--border);
+}
+
+.details-container{
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	background: var(--white);
+	border-radius: 2rem;
+	border: var(--button_hover) 0.1rem solid;
+	border-color: var(--border);
+	text-align: center;
+}
+
+.section__pic-container{
+	height: 400px;
+	width: 400px;
+	margin: auto 0;
+}
+
+
+/* SKILLS SECTION */
+#skills{
+    position: relative;
+}
+
+.skills__container{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.skills__container .skills{
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	background: var(--white);
+	border-radius: 2rem;
+	border: var(--button_hover) 0.1rem solid;
+	border-color: var(--border);
+	text-align: center;
+	width: 33.33%;
+}
+
+.skills__container .skills .skills__sub__title{
+	color: var(--sub-title);
+	font-weight: 600;
+	font-size: 1.75rem;
+	margin-bottom: 2rem;
+}
+
+.skills__container .skills .skills__wrapper{
+	display: flex;
+	text-align: left;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 2.5rem;
+	justify-content: space-between;
+}
+
+.skills__container .skills .skills__wrapper article{
+	display: flex;
+	min-width: 10rem;
+	gap: 1rem;
+	align-items: center;
+}
+
+.skills__container .skills .skills__wrapper article .icon{
+	cursor: default;
+}
+
+.skills__container .skills .skills__wrapper li{
+	margin: 0 0 2.8rem 1.5rem;
+}
+
+.skills__container .skills .skills__wrapper li:last-child{
+	margin: 0 0 0 1.5rem;
+}
+
+.article-container{
+	display: flex;
+	text-align: left;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 2.5rem;
+	justify-content: space-between;
+}
+
+article{
+	display: flex;
+	min-width: 10rem;
+	gap: 1rem;
+	align-items: center;
+}
+
+article .icon{
+   cursor: default;
+}
+
+.article-container li{
+	margin: 0 0 2.8rem 1.5rem;
+}
+
+/* CERTIFICATIONS */
+#certifications .certification__container{
+	margin-bottom: 2rem;
+}
+
+#certifications .certification ul li{
+	margin-left: 2.5rem;
+	list-style: none;
+}
+
+.certification__title{
+	color: var(--sub-title);
+	font-weight: 600;
+	font-size: 1.75rem;
+	margin-top: 2rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.certification__sub__title{
+	margin: 0 0 0 2.5rem;
+	color: var(--sub-title); 
+	font-weight: 500;
+}
+
+
+/* EXPERIENCE */
+#experiences .experience__container{
+	margin-bottom: 2rem;
+}
+
+#experiences .experience ul li{
+	margin-left: 2.5rem;
+}
+
+.experience__title{
+	color: var(--sub-title);
+	font-weight: 600;
+	font-size: 1.75rem;
+	margin-top: 2rem;
+}
+
+.experience__sub__title{
+	margin: 0 0 1rem 2rem;
+	color: var(--sub-title); 
+	font-weight: 500;
+}
+
+
+/* PROJECTS SECTION */
+#projects{
+    position: relative;
+}
+
+#projects .projects__container{
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+#projects .projects__container .project{
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	background: var(--white);
+	border: var(--border) 0.1rem solid;
+	border-radius: 2rem;
+	text-align: center;
+	justify-content: space-between;
+}
+
+#projects .projects__container .project .project__title{
+    margin: 1rem 0;
+    color: var(--black);
+}
+
+#projects .projects__container .project .project__thumbnail{
+	height: 222px;
+	width: 333px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 2.5rem;
+	justify-content: space-between;
+}
+
+#projects .projects__container .project .project__thumbnail	img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+#projects .projects__container .project .project__buttons{
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#projects .projects__container .project .project__buttons .project__button{
+	padding: 1rem;
+    width: 9rem;
+	background: var(--white);
+	color: var(--grey);
+	font-weight: 600;
+	border: var(--border) 0.1rem solid;
+    border-radius: 2rem;
+	cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#projects .projects__container .project .project__buttons .project__button:disabled{
+	cursor: not-allowed !important;
+}
+
+#projects .projects__container .project .project__buttons .project__button:hover{
+	background: var(--button_hover);
+    color: var(--white);
+	border: var(--button_hover) 0.1rem solid;
+}
+
+
+/* CONTACT */
+#contact{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 70vh;
+}
+
+.contact-info-upper-container{
+	display: flex;
+	justify-content: center;
+	border-radius: 2rem;
+	border: var(--button_hover) 0.1rem solid;
+	border-color: var(--border);
+	background: var(--container_background);
+	margin: 2rem auto;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.contact-info-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+}
+
+.email-icon{
+    height: 2.5rem;
+}

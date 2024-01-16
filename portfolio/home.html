@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>My Portfolio</title>
+
+		<script src="https://kit.fontawesome.com/8e057953ce.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/nav.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
+	</head>
+
+  	<body>
+		<div class="header">
+			<div class="progress-container">
+				<div class="progress-bar" id="myBar"></div>
+			</div>  
+		</div>
+
+		<nav id="desktop-nav">
+			<div class="logo">Mohit Rathod</div>
+
+			<div>
+				<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#certifications">Certifications</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<nav id="hamburger-nav">
+			<div class="logo">Mohit Rathod</div>
+
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+				</div>
+				<div class="menu-links">
+				<li><a href="#about" onclick="toggleMenu()">About</a></li>
+				<li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+				<li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+				<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+				<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+				<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+
+		<section id="profile">	
+			<div class="profile__pic">
+				<img src="./assets/img/profile-pic.jpeg" alt="Mohit Rathod profile picture" />
+			</div>
+
+			<div class="section__sub__title">
+				<div>
+					<p class="section__sub__title">Hello, I'm</p>
+					<h1 class="section__heading">Mohit Rathod</h1>
+					<p class="section__title">Business Analyst</p>
+				</div>
+				
+				<div class="section__buttons">
+					<button class="btn btn-color-2" onclick="window.open('./assets/docs/Mohit_Rathod_Resume.pdf')">Download Resume</button>
+					<button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+				</div>
+
+				<div id="section__social__buttons">
+					<img src="./assets/img/tableau.png" alt="My Tableau profile" class="icon" id="tableau" onclick="sociallink('https://public.tableau.com/app/profile/mohitrathod/vizzes')">
+					<i class="icon fa-brands fa-linkedin" onclick="sociallink('https://linkedin.com/in/mohit-rathod')"></i>
+					<i class="icon fa-brands fa-github" onclick="sociallink('https://github.com/mohitrathod7')"></i>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<p class="section__sub__title">Get To Know More</p>
+			<h1 class="section__heading">About Me</h1>
+
+			<div class="about__container">
+				<div class="education">
+					<div style="margin: 0.5rem 0 2rem 0;">
+						<i class="icon fa-solid fa-graduation-cap"></i>
+						<h2 style="color: var(--sub-title);">Education</h2>
+					</div>
+
+					<div>
+						<p>
+							<span style="color: var(--black);">Business Insights and Analytics,</span>
+							<br>
+							<span>Humber College, Toronto, Canada</span>
+						</p>
+						
+						<br>
+						
+						<p>
+							<span style="color: var(--black);">B.Sc. Computer Science,</span>
+							<br>
+							<span>Mumbai University, Mumbai, India - (9.42/10 GPA)</span>
+						</p>
+					</div>
+				</div>
+				
+				<div class="text-container">
+					<p>
+						Passionate about leveraging data-driven insights to fuel business success, 
+						I am a versatile professional with a background in computer science and am currently pursuing 
+						advanced studies in Business Insights and Analytics at Humber College. My journey has equipped 
+						me with a robust set of technical skills and analytical thinking, making me poised for a career 
+						at the intersection of data and business.
+
+						<br><br>
+
+						Driven by a passion for translating data into actionable business strategies, 
+						I am poised to contribute to dynamic teams and projects. I aim to leverage my technical acumen, 
+						analytical mindset, and business insights education to drive meaningful impact as a data and 
+						business analyst.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills">
+			<p class="section__sub__title">Explore My</p>
+			<h1 class="section__heading">Skills</h1>
+
+			<div class="skills__container">
+				<div class="skills">
+					<h2 class="skills__sub__title">Tools and Languages</h2>
+					
+					<div class="skills__wrapper">
+						<article>
+							<i class="icon fa-brands fa-python"></i>
+							
+							<div>
+								<h3>Python</h3>
+							</div>
+						</article>
+
+						<article>
+							<i class="icon fa-solid fa-database"></i>
+							
+							<div>
+								<h3>SQL</h3>
+							</div>
+						</article>
+
+						<article>
+							<img src="./assets/img/tableau.png" alt="Experience icon" class="icon"/>
+
+							<div>
+								<h3>Tableau</h3>
+							</div>
+						</article>
+
+						<article>
+							<i class="icon fa-brands fa-html5"></i>
+
+							<div>
+								<h3>HTML</h3>
+							</div>
+						</article>
+
+						<article>								
+							<i class="icon fa-brands fa-css3"></i>
+
+							<div>
+								<h3>CSS</h3>
+							</div>
+						</article>
+
+						<article>								
+							<i class="icon fa-brands fa-js"></i>
+
+							<div>
+								<h3>JS</h3>
+							</div>
+						</article>
+						
+						<article>								
+							<i class="icon fa-brands fa-microsoft"></i>
+							
+							<div>
+								<h3>Microsoft Suite (Excel, Word, and PowerPoint)</h3>
+							</div>
+						</article>
+						
+						<article>								
+							<img src="./assets/img/powerbi.png" alt="Experience icon" class="icon"/>
+							
+							<div>
+								<h3>Power BI</h3>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="skills">
+					<h2 class="skills__sub__title">Interpersonal Skills</h2>
+
+					<div class="skills__wrapper">
+						<article>
+							<i class="icon fa-solid fa-people-group"></i>
+							<h3>Team collaboration</h3>
+						</article>
+
+						<article>
+							<i class="icon fa-solid fa-comment-dots"></i>
+							<h3>Feedback reception</h3>
+						</article>
+
+						<article>
+							<i class="icon fa-solid fa-handshake"></i>
+							<h3>Stakeholder management</h3>
+						</article>
+
+						<article>
+							<i class="icon fa-solid fa-book-open-reader"></i>
+							<h3>Ability to learn new concepts</h3>
+						</article>
+
+						<article>
+							<i class="icon fa-solid fa-list-check"></i>
+							<h3>Project management</h3>
+						</article>
+					</div>
+				</div>
+
+				<div class="skills">
+					<h2 class="skills__sub__title">Other Skills</h2>
+
+					<div class="skills__wrapper">
+						<h3> 
+							<ul>
+								<li>Ratio and Trend analysis</li>
+								<li>Competitor Analysis</li>
+								<li>Excel Statistics</li>
+								<li>Business Analysis</li>
+								<li>Data Visualisation</li>
+								<li>Database management</li>
+								<li>Capital Markets and Analysis</li>
+								<li>Analytical Thinking</li>
+							</ul>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section id="certifications">
+			<p class="section__sub__title">My</p>
+			<h1 class="section__heading">Certifications</h1>
+
+			<div class="certification__container">
+				<div class="certification">
+					<h2 class="certification__title" onclick="open_certificate('https://www.linkedin.com/learning/certificates/d82552b2a2467314cbcb0eb80065321f3b775dabb52ed84584cbb8336a2f3275?u=2218586')">1) SQL: Data Reporting and Analysis</h2>
+					<h3 class="certification__sub__title">By Emma Saunders – LinkedIn Learning</h3>
+
+					<ul>
+						<li>
+							<p>Gained a solid understanding of how to use SQL for data retrieval, manipulation, and reporting.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="certification">
+					<h2 class="certification__title" onclick="open_certificate('https://www.linkedin.com/learning/certificates/63e55d220936982e2135cc48df2f19d24e0c1ec87054781550633da132189123?u=2218586')">2) Tableau Essential Training</h2>
+					<h3 class="certification__sub__title">By Curt Frye – LinkedIn Learning</h3>
+					
+					<ul>
+						<li>
+							<p>Tableau enables us to derive insights and present data-driven solutions effectively.</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="certification">
+					<h2 class="certification__title" onclick="open_certificate('https://www.linkedin.com/learning/certificates/5c39ec43ec0404edd33716122a2b1cba0f4aa182504a76d12dd17bc6ef2cead3')">3) Excel Statistics Essential Training 1 & 2</h2>
+					<h3 class="certification__sub__title">By Eddie Davila – LinkedIn Learning</h3>
+					
+					<ul>
+						<li>
+							<p>A solid foundation in statistics, in applying statistical principles using Excel to make informed decisions and predictions in business settings.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="certification">
+					<h2 class="certification__title" onclick="open_certificate('https://www.linkedin.com/learning/certificates/0bc8fb8c42a6b45b012ff2054888da473a2f3d68df5dbfb8c511894f41145b98?trk=share_certificate')">4) Corporate Financial Statement Analysis</h2>
+					<h3 class="certification__sub__title">By Earl Stice & Jim Stice – LinkedIn Learning</h3>
+					
+					<ul>
+						<li>
+							<p>Learned to analyse business activities, use DuPont framework, common size financial statements & apply ratios for financial analysis.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="certification">
+					<h2 class="certification__title" onclick="open_certificate('https://www.linkedin.com/learning/certificates/727bcbebbaae0afa4f92259bb18bd8035ddd5847d4f498ca93898a2c2a94bf74?u=2218586')">5) Accounting Foundations: Managerial Accounting</h2>
+					<h3 class="certification__sub__title">By Earl Stice and Jim Stice – LinkedIn Learning</h3>
+					
+					<ul>
+						<li>
+							<p>Gained a comprehensive understanding of business strategy challenges, managerial accounting principles, cost analysis, variance management, activity-based costing assumptions, and the qualitative and quantitative factors involved in capital budgeting.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="experiences">
+			<p class="section__sub__title">My</p>
+			<h1 class="section__heading">Experiences</h1>
+
+			<div class="experience__container">
+				<div class="experience">
+					<h2 class="experience__title">1) Data-Driven Solutions for Mars Waves in Mitigating Sales Returns Surge</h2>
+					<h3 class="experience__sub__title">(Group project)</h3>
+
+					<ul>
+						<li>
+							<p>Collaborated in hypothetical company “Mars Waves”s team, addressed sales return surge and utilized analytics for "No Questions Asked" warranty impact.</p>
+						</li>
+
+						<li>
+							<p>Demonstrated problem-solving, mitigated financial impact, contributed to strategic planning with data-driven approaches through “Diagnostic” and “Predictive” analytical questions.</p>
+						</li>
+					
+						<li>
+							<p>Sustained operational and financial resilience in a dynamic market.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="experience">
+					<h2 class="experience__title">2) Strategic Exploration of BlackBerry: Comprehensive Business Analysis</h2>
+					<h3 class="experience__sub__title">(Major research group project)</h3>
+					
+					<ul>
+						<li>
+							<p>Selected and explored Blackberry during the first semester in Canadian Business Analysis course.</p>
+						</li>
+
+						<li>
+							<p>Project focused on Vision & Mission, PESTEL Analysis, Porter's Five Forces Analysis, SWOT Analysis, Competitive Advantage & Sustainability.</p>
+						</li>
+					
+						<li>
+							<p>Conducted Value Chain Analysis and examined Differentiation Strategy.</p>
+						</li>
+
+						<li>
+							<p>Identified and analysed Challenges and Threats faced by the company.</p>
+						</li>
+					
+						<li>
+							<p>Formulated recommendations for the company's top management based on identified issues.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="experience">
+					<h2 class="experience__title">3) Navigating the Steel Industry's Dynamics and Unveiling Nucor's Strategic Brilliance</h2>
+					<h3 class="experience__sub__title">(Business case study)</h3>
+	
+					<ul>
+						<li>
+							<p>Explored steel industry intricacies and technologies used by players like Nucor.</p>
+						</li>
+
+						<li>
+							<p>Conducted a robust analysis, focusing on Nucor's unique position and product innovation.</p>
+						</li>
+
+						<li>
+							<p>Explored sustainability of Nucor's advantage, emphasizing strategic brilliance.</p>
+						</li>
+
+						<li>
+							<p>Unveiled Nucor's strategy, questioning if it's based on cost leadership, differentiation, or a hybrid.</p>
+						</li>
+					
+						<li>
+							<p>Explored Nucor's practices, highlighting alignment as key to strategy execution.</p>
+						</li>
+
+						<li>
+							<p>Explored hurdles on Nucor's agenda, emphasizing how they tackle industry challenges.</p>
+						</li>
+					
+						<li>
+							<p>Concluded with personalized suggestions for John Ferriola, recognizing room for improvement.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects">
+			<p class="section__sub__title">Browse My Recent</p>
+			<h1 class="section__heading">Projects</h1>
+
+			<div class="projects__container">
+				<div class="project">
+					<div class="project__thumbnail">
+						<img src="./assets/img/projects/calgary.png" alt="Project 1"/>
+					</div>
+
+					<h2 class="project__title">Calgary Real Estate Listing Data</h2>
+
+					<div class="project__buttons">
+						<button class="project__button" onclick="location.href=''">View</button>
+						<button class="project__button" onclick="location.href=''" disabled>Learn more</button>
+					</div>
+				</div>
+
+				<div class="project">
+					<div class="project__thumbnail">
+						<img src="./assets/img/projects/virat_kohli.png" alt="Project 2"/>
+					</div>
+
+					<h2 class="project__title">Virat Kohli Century Analysis</h2>
+
+					<div class="project__buttons">
+						<button class="project__button" onclick="window.open('https://public.tableau.com/views/Viratkohli_17051139222610/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link', '_blank').focus()">View</button>
+						<button class="project__button" onclick="location.href=''" disabled>Learn more</button>
+					</div>
+				</div>
+				
+				<div class="project">
+					<div class="project__thumbnail">
+						<img src="./assets/img/projects/stock_market.png" alt="Project 3"/>
+					</div>
+
+					<h2 class="project__title">Stock Market Portfolio</h2>
+
+					<div class="project__buttons">
+						<button class="project__button" onclick="location.href=''">View</button>
+						<button class="project__button" onclick="location.href=''" disabled>Learn more</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<p class="section__sub__title">Get in Touch</p>
+
+			<h1 class="section__heading">Contact Me</h1>
+
+			<div class="contact-info-upper-container">
+				<div class="contact-info-container">
+					<i class="icon fa-solid fa-envelope"></i>
+					<p><a href="mailto:mohitrathod.ca@gmail.com">mohitrathod.ca@gmail.com</a></p>
+				</div>
+
+				<div class="contact-info-container">
+					<i class="icon fa-brands fa-linkedin"></i>
+					<p><a href="https://www.linkedin.com/in/mohit-rathod">LinkedIn</a></p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<nav>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<span>|</span>
+						<li><a href="#skills">Skills</a></li>
+						<span>|</span>
+						<li><a href="#certifications">Certifications</a></li>
+						<span>|</span>
+						<li><a href="#experience">Experience</a></li>
+						<span>|</span>
+						<li><a href="#projects">Projects</a></li>
+						<span>|</span>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<p>Copyright &#169; 2024 Mohit Rathod. All Rights Reserved.</p>
+		</footer>
+
+    	<script src="./assets/js/script.js"></script>
+  	</body>
+</html>
