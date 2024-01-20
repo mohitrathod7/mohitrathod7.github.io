@@ -1,13 +1,12 @@
-@media screen and (max-width: 1400px) {
-	#contact, #projects {
-		height: fit-content;
-	}
-}
-
 /* Tablet */
 @media screen and (max-width: 1100px) {
 	#desktop-nav {
 		display: none;
+	}
+
+	#profile, #contact{
+		margin: 10rem 5% 3rem 5%;
+		height: unset;
 	}
 
 	nav#hamburger-nav{
@@ -29,21 +28,17 @@
 		height: 275px;
 		margin: 0 auto 2rem;
 	}
-
-	.about-containers {
-		margin-top: 0;
-	}
 }
 
 /* Mobile */
-@media screen and (max-width: 600px) {
-	.logo {
+@media screen and (max-width: 850px){
+	.logo{
 		font-size: 1.5rem;   
 		text-align: center;
 		width: -webkit-fill-available;
 	}
 
-	.nav-links {
+	.nav-links{
 		flex-direction: column;
 		gap: 0.5rem;
 		text-align: center;
@@ -61,10 +56,12 @@
 	#profile{
 		height: unset;
 		margin-top: 8rem;
+		flex-direction: column;
+		gap: 0;
 	}
 	
 	#profile .profile__pic{
-		margin: 2rem;
+		margin: 0 2rem 2rem 2rem;
 		height: unset;
 		width: unset;
 	}
@@ -116,18 +113,27 @@
 
 	footer{
 		height: unset !important;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 
-	footer nav{
+	footer div{
+		flex-direction: column;
+		gap: 0;
+	}
+
+	footer .nav-links-container{
 		height: fit-content;
 		margin-bottom: 2rem;
 	}
 	
-	footer nav .nav-links{
+	footer .nav-links{
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+
+	.contact-info-upper-container{
+		flex-direction: column;
 	}
 
 	.contact-info-container {
