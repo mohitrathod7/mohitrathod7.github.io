@@ -22,9 +22,7 @@
 	border-radius: 50%;
 }
 
-
 .section__sub__title{
-	align-self: center;
 	text-align: center;
 }
 
@@ -361,7 +359,6 @@ article .icon{
 	border-radius: 1rem;
 	border: var(--button_hover) 0.1rem solid;
 	border-color: var(--border);
-	background: var(--container_background);
 	margin: 2rem auto;
 	padding: 1rem;
 	gap: 1rem;
