@@ -11,12 +11,6 @@
 
 	nav#hamburger-nav{
 		display: flex;
-		height: unset;
-		padding: 1.5rem 1.5rem;
-		justify-content: space-between;
-		width: -webkit-fill-available;
-		background-color: var(--white);
-		box-shadow: 0 0 0.7rem 0 var(--button_hover);
 	}	
 
 	section {
