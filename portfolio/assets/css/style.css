@@ -304,13 +304,14 @@ article .icon{
 }
 
 #projects .projects__container .project .project__thumbnail{
-	height: 16.2rem;
+	height: 13.33rem;
 }
 
-#projects .projects__container .project .project__thumbnail	img{
+#projects .projects__container .project .project__thumbnail	img, #projects .projects__container .project .project__thumbnail video{
     border-radius: 0.9rem 0.9rem 0 0;
     width: 100%;
     height: 100%;
+	object-fit: cover;
 }
 
 #projects .projects__container .project .project__buttons{
