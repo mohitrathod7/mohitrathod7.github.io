@@ -13,6 +13,20 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<link rel="stylesheet" href="./assets/css/nav.css" />
 		<link rel="stylesheet" href="./assets/css/responsive.css" />
+
+		<style>
+			nav{
+				position: unset !important;
+				height: 17vh !important;
+				box-shadow: none !important; 
+			}
+
+			footer{
+				height: 26vh !important;
+				display: block !important;
+				padding: unset !important;
+			}
+		</style>
 	</head>
 
   	<body>
@@ -22,7 +36,7 @@
 			</div>  
 		</div>
 
-		<nav id="desktop-nav">
+	<nav id="desktop-nav">
 			<div class="logo">Mohit Rathod</div>
 
 			<div>
@@ -415,7 +429,25 @@
 			<div class="projects__container">
 				<div class="project">
 					<div class="project__thumbnail">
-						<img src="./assets/img/projects/calgary.png" alt="Project 1"/>
+						<img src="./assets/img/projects/football_match_prediction.png" alt="Project 1"/>
+
+						<!-- <video muted autoplay loop>
+							<source src="./assets/vid/demo.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video> -->
+					</div>
+
+					<h2 class="project__title">EPL Football Match Result Prediction</h2>
+					
+					<div class="project__buttons">
+						<button class="button primary" onclick="window.open('https://github.com/mohitrathod7/Football-Match-Result-Predictor', '_blank').focus()">Open in Github</button>
+						<button class="button" onclick="window.open('https://mohitrathod7.github.io/portfolio/projects/EPL_Match_Result_Prediction.html', '_blank').focus()">Learn more</button>
+					</div>
+				</div>
+
+				<div class="project">
+					<div class="project__thumbnail">
+						<img src="./assets/img/projects/calgary.png" alt="Project 2"/>
 					</div>
 
 					<h2 class="project__title">Calgary Real Estate Listing Data</h2>
@@ -428,7 +460,7 @@
 
 				<div class="project">
 					<div class="project__thumbnail">
-						<img src="./assets/img/projects/virat_kohli.png" alt="Project 2"/>
+						<img src="./assets/img/projects/virat_kohli.png" alt="Project 3"/>
 					</div>
 					
 					<h2 class="project__title">Virat Kohli Century Analysis</h2>
@@ -441,7 +473,7 @@
 				
 				<div class="project">
 					<div class="project__thumbnail">
-						<img src="./assets/img/projects/stock_market.png" alt="Project 3"/>
+						<img src="./assets/img/projects/stock_market.png" alt="Project 4"/>
 					</div>
 
 					<h2 class="project__title">Stock Market Portfolio</h2>
